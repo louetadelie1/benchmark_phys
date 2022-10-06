@@ -7,6 +7,7 @@ Check progress by executing squeue -n bingo in terminal (when no jobs are runnin
 
 
 NEED TO LOAD ANACONDA/3/2020.2 ON PHYS CLUSTER PRIOR TO USING LIB
+Need to login to cluster with -o ServerAliveINterval=300 login@mpi because when terminal disconnects from cluster, process stops (wip).
 
 If you download all the code on personal comp (best method)
 Execute the following:	
