@@ -90,6 +90,7 @@ def analyze():
     df['Nodes'] = df['Nodes'].astype(str).str.split('=').str[1]
     
     pd.set_option('display.max_colwidth',1000)
+    pandas.set_option('display.max_rows', df.shape[0]+1)
 
     df = df.sort_values(by=['Perfomance'], ascending=False)
     df = df.reset_index()
