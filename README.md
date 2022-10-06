@@ -1,3 +1,4 @@
+# README
 
 Only works on PHYS cluster & tests up to 4 nodes!
 
