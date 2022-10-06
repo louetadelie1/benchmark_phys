@@ -1,0 +1,6 @@
+include README.md LICENSE
+include setup.py
+include bench_physstu/*.py
+
+recursive-include bench_physstu *
+
