@@ -88,6 +88,8 @@ def analyze():
     df['CPUs'] = df['CPUs'].astype(str).str.split('=').str[1]
     df['GPUs'] = df['GPUs'].astype(str).str.split(':').str[1]
     df['Nodes'] = df['Nodes'].astype(str).str.split('=').str[1]
+    
+    pd.set_option('display.max_colwidth',1000)
 
     df = df.sort_values(by=['Perfomance'], ascending=False)
     df = df.reset_index()
